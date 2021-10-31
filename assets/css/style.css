@@ -1,7 +1,8 @@
 
 :root {
-    --darkGray: rgb(44, 52, 61);
+    --darkGray: rgb(41, 46, 58);
     --lightBlue: rgb(146, 204, 205);
+    --cyan: rgb(54, 72, 129);
 }
 
 * {
@@ -15,6 +16,8 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+
+/*Header*/
 header {
     display: flex;
     padding: 10px 80px 15px 0px;
@@ -55,12 +58,61 @@ header nav a {
     padding-bottom: 2px;
     font-size: 19px;
 }
+/*end Header*/
 
+/*Hero*/
 .hero {
     width: 100%;
-    background-image: url("../svg/hero.svg+xml");
+    height: 230px;
+    background-image: url("../images/heroImage.jpg");
+    display: flex;
     background-size: cover;
-    opacity: 1;
-
-    
+    justify-content: right;
+    align-items: flex-end;
 }
+
+.hero div {
+    margin: 20px 200px 0px 0px;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--darkGray);
+    color: var(--lightBlue);
+}
+/*end Hero*/
+
+/*Section*/
+section {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 0px 0px;
+    color: var(--cyan);
+}
+
+section h2 {
+    width: 197px;
+    font-size: 50px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+section div {
+    width: 70%;
+    padding-left: 30px;
+    border-left: solid var(--cyan);
+}
+
+section p {
+    padding-bottom: 20px;
+}
+/*end section*/
+
+/*About-me specific*/
+section .about-me {
+    
+    font-size: 18px;
+    line-height: 1.5;
+}
+/*end About-me specific*/
+
