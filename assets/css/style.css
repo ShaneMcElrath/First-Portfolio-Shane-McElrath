@@ -1,0 +1,66 @@
+
+:root {
+    --darkGray: rgb(44, 52, 61);
+    --lightBlue: rgb(146, 204, 205);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 10px 80px 15px 0px;
+    width: 100%;
+    background-color: var(--darkGray);
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    background-color: var(--lightBlue);
+    padding: 0px 5px 0px 80px;
+    font-size: 50px;
+}
+
+h1 a {
+    color: var(--darkGray);
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    list-style: none;
+    padding-left: 10px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav a {
+    color: var(--lightBlue);
+    border-bottom: solid var(--lightBlue);
+    padding: 0px 10px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    font-size: 19px;
+}
+
+.hero {
+    width: 100%;
+    background-image: url("../svg/hero.svg+xml");
+    background-size: cover;
+    opacity: 1;
+
+    
+}
