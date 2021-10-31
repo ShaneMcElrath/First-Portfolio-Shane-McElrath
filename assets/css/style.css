@@ -20,7 +20,7 @@ body {
 /*Header*/
 header {
     display: flex;
-    padding: 10px 80px 15px 0px;
+    padding: 10px 140px 15px 0px;
     width: 100%;
     background-color: var(--darkGray);
     justify-content: space-between;
@@ -109,10 +109,33 @@ section p {
 /*end section*/
 
 /*About-me specific*/
-section .about-me {
-    
+#about-me div {
     font-size: 18px;
     line-height: 1.5;
 }
 /*end About-me specific*/
+
+/*Contact Me specific*/
+#contact-me a {
+    text-decoration: none;
+    color: var(--cyan);
+    font-size: 18px;
+}
+
+#contact-me li {
+    list-style: none;
+    margin: 0px 60px 0px 20px;
+    border-bottom: solid var(--cyan);
+}
+
+#contact-me ul {
+    display: flex;
+}
+
+#contact-me div {
+    display: flex;
+    align-items: center;
+}
+/*end Contact Me specific*/
+
 
