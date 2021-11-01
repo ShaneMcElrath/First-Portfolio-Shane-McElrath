@@ -20,6 +20,7 @@ body {
 /*Header*/
 header {
     display: flex;
+    flex-wrap: wrap;
     padding: 10px 140px 15px 0px;
     width: 100%;
     background-color: var(--darkGray);
@@ -115,7 +116,85 @@ section p {
 }
 /*end About-me specific*/
 
+/*Work specific*/
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#work .project {
+    border: solid 5px var(--lightBlue);
+    padding: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#work .run-buddy {
+    flex-grow: 1;
+    flex-basis: 1200px;
+    height: 400px;
+    background-image: url("../images/runBuddyScreenShot.png");
+    background-size: 1300px;
+}
+
+#work .robot-gladiators {
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 16px 8px 0px 0px;
+    height: 150px;
+    background-image: url("../images/robotGladiatorsScreenShot.png");
+    background-size: 600px;
+    background-position-y: -50px;
+}
+
+#work .coming-soon {
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 16px 0px 0px 8px;
+    height: 150px;
+    background-image: url("../images/Code.png");
+}
+
+.project-lable {
+    position: absolute;
+    border: none;
+    padding: 5px;
+    margin-bottom: 30px;
+    background-color: var(--lightBlue);
+    width: auto;
+    z-index: 3;
+}
+
+/*Color Transition*/
+.color-shift {
+    flex-grow: 1;
+    background: var(--darkGray);
+    border: none;
+    opacity: .5;
+    transition: opacity .5s;
+}
+
+.run-buddy .color-shift {
+    height: 390px;
+}
+
+.robot-gladiators .color-shift,
+ .coming-soon .color-shift {
+    height: 140px;
+}
+
+.color-shift:hover {
+    opacity: 0;
+}
+/*end Color Transition*/
+/*end Work specific*/
+
+
 /*Contact Me specific*/
+#contact-me {
+    margin-bottom: 50px;
+}
+
 #contact-me a {
     text-decoration: none;
     color: var(--cyan);
@@ -130,6 +209,7 @@ section p {
 
 #contact-me ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #contact-me div {
@@ -138,4 +218,43 @@ section p {
 }
 /*end Contact Me specific*/
 
+@media screen and (max-width: 980px) {
 
+    /*header*/
+    header {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    /*end header*/
+
+    /*hero*/
+    .hero {
+        justify-content: center;
+    }
+
+    .hero div {
+        margin-right: 0;
+    }
+    /*end hero*/
+
+    /*section*/
+    section h2 {
+        font-size: 30px;
+        width: 130px;
+    }
+    /*end section*/
+
+    /*Contact me*/
+    #contact-me li {
+        margin-right: 20px;
+    }
+    /*end Contact me*/
+
+}
