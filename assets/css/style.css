@@ -166,6 +166,11 @@ section p {
 }
 
 /*Color Transition*/
+.project a {
+    display: flex;
+    flex-grow: 1;
+}
+
 .color-shift {
     flex-grow: 1;
     background: var(--darkGray);
@@ -250,6 +255,14 @@ section p {
         width: 130px;
     }
     /*end section*/
+
+    /*Work*/
+    #work .coming-soon,
+    #work .robot-gladiators {
+        flex-basis: 600px;
+        margin: 16px 0px 0px 0px;
+    }
+    /*end Work*/
 
     /*Contact me*/
     #contact-me li {
