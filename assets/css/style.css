@@ -223,6 +223,8 @@ section p {
 }
 /*end Contact Me specific*/
 
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 980px) {
 
     /*header*/
@@ -269,5 +271,44 @@ section p {
         margin-right: 20px;
     }
     /*end Contact me*/
+    /*end MEDIA QUERY FOR TABLETS AND SMALLER */
 
+    
 }
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    section {
+        flex-wrap: wrap;
+    }
+
+    section h2 {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    section div {
+        border: none;
+        padding: 0;
+        padding-top: 20px;
+        border-top: solid;
+    }
+
+    /*about-me specific*/
+    section p {
+        text-align: center;
+    }
+    /*end about-me specific*/
+
+    /*contact-me specific*/
+    #contact-me li {
+        margin-top: 15px;
+    }
+
+    #contact-me ul {
+        justify-content: center;
+    }
+    /*contact-me specific*/
+}
+/*end MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
