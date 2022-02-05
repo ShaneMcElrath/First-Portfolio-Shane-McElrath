@@ -133,7 +133,7 @@ section p {
     flex-grow: 1;
     flex-basis: 1200px;
     height: 400px;
-    background-image: url("../images/runBuddyScreenShot.png");
+    background-image: url("../images/elonCoinScreenshot.png");
     background-size: 1300px;
 }
 
@@ -142,7 +142,7 @@ section p {
     flex-grow: 1;
     margin: 16px 8px 0px 0px;
     height: 150px;
-    background-image: url("../images/robotGladiatorsScreenShot.png");
+    background-image: url("../images/runBuddyScreenShot.png");
     background-size: 600px;
     background-position-y: -50px;
 }
